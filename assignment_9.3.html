@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spread & Destructuring</title>
+</head>
+
+<body>
+    <script>
+        var evens = [2, 4, 6, 8];
+        var odds = [1, 3, 5, 7];
+        var primes = [2, 3, 5, 7, 11];
+
+        var all = [...primes, ...evens, ...odds];
+        var newPrimes = [...primes];
+
+        var jamesBond = {
+            first: 'samarth',
+            last: 'arora',
+            country: 'india',
+            city: 'noida',
+            twitter: '@arora'
+        };
+        var {
+            first,
+            last,
+            twitter
+        } = jamesBond;
+
+        var players = ['sam', 'arora', 'jhf', 'jib'];
+        var [player1, player2, player3, player4] = players;
+    </script>
+</body>
+
+</html>
